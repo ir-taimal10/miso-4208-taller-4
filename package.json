@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "cypress": "^3.1.5"
+    "cypress": "^3.1.5",
+    "webdriverio": "^4.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "wdio-jasmine-framework": "^0.3.2",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.2"
+  },
   "scripts": {
-    "test": "npm run test:cypress",
+    "test": "npm run test:cypress && npm run test:gremlins",
+    "test:gremlins": "node node_modules/webdriverio/bin/wdio wdio.conf.js",
     "test:cypress": "cypress run --record --key cc6808e9-c5b6-4639-a0b7-5df6262b50d6 --headed"
   },
   "repository": {
