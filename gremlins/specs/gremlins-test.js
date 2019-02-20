@@ -14,6 +14,7 @@ function unleashGremlins(ttl, callback) {
         horde.stop();
         callback();
     }
+
     var horde = window.gremlins.createHorde();
     horde.seed(1234);
 
@@ -23,9 +24,9 @@ function unleashGremlins(ttl, callback) {
     horde.unleash();
 }
 
-describe('Monkey testing with gremlins ', function() {
+describe('Monkey testing with gremlins ', function () {
 
-    it('it should not raise any error', function() {
+    it('it should not raise any error', function () {
         browser.url('/');
         browser.click('button=Cerrar');
 
@@ -36,8 +37,8 @@ describe('Monkey testing with gremlins ', function() {
         browser.executeAsync(unleashGremlins, 50000);
     });
 
-    afterAll(function() {
-        browser.log('browser').value.forEach(function(log) {
+    afterAll(function () {
+        browser.log('browser').value.forEach(function (log) {
             browser.logger.info(log.message.split(' ')[2]);
         });
     });
