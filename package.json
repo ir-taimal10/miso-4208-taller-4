@@ -1,0 +1,24 @@
+{
+  "name": "miso-4208-taller-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^3.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test:cypress",
+    "test:cypress": "cypress run --record --key cc6808e9-c5b6-4639-a0b7-5df6262b50d6 --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ir-taimal10/miso-4208-taller-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ir-taimal10/miso-4208-taller-2/issues"
+  },
+  "homepage": "https://github.com/ir-taimal10/miso-4208-taller-2#readme"
+}
