@@ -15,3 +15,6 @@ Ejecutar prueba random en Gremlins
 ````angularjs
 npm run test:gremlins
 ````
+
+Prueba con Android Platform tools
+![](Uhabits.gif)
