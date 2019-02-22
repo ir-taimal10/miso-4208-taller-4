@@ -17,4 +17,7 @@ npm run test:gremlins
 ````
 
 Prueba con Android Platform tools
+````angularjs
+adb shell monkey -p org.isoron.uhabits -v 10000
+````
 ![](Uhabits.gif)
